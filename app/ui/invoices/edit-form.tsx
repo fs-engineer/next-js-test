@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Button } from '@/app/ui/button';
 import { updateInvoice } from '@/app/lib/actions';
 
+// TODO need to add useStateForm like in CreateForm
 export default function EditInvoiceForm({ invoice, customers }: { invoice: InvoiceForm; customers: CustomerField[] }) {
     const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);
     return (
